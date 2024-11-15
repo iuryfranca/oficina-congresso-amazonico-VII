@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+}
+
+.wrapper-page-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 100%;
+  // width: 820px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+  color: #212121;
+
+  padding: 64px;
+}
+
+.home-description {
+  font-size: 40px;
+  font-weight: bold;
+  color: #771AFE;
+}
+
+.buttons-home {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+}
+
+.button-contact {
+  height: 40px;
+  width: 120px;
+
+  background-color: white;
+  color: #212121;
+
+  border: 2px #e90363 solid;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  &:hover {
+    transition: all .5s ease;
+    background-color: #e9036321;
+  }
+}
