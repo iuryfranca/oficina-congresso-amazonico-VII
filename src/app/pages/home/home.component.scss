@@ -9,13 +9,14 @@
   justify-content: space-between;
 
   height: 100%;
-  // width: 820px;
+  width: 100%;
+  max-width: 1280px;
 
   margin-left: auto;
   margin-right: auto;
 
   background-color: white;
-  color: #212121;
+  color: #2C2D2F;
 
   padding: 64px;
 }
@@ -38,10 +39,10 @@
 
 .button-contact {
   height: 40px;
-  width: 120px;
+  width: 130px;
 
   background-color: white;
-  color: #212121;
+  color: #2C2D2F;
 
   border: 2px #e90363 solid;
   border-radius: 6px;

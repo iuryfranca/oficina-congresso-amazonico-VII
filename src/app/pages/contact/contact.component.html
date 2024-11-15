@@ -1,0 +1,123 @@
+<section class="wrapper-page-contact">
+  <div class="form-wrapper">
+    <span class="form-title">
+      Inicie sua jornada com uma <br />
+      conversa!
+    </span>
+
+    <form
+      action=""
+      class="form-inputs"
+      (ngSubmit)="envioDoFormulario()"
+      [formGroup]="formContact"
+    >
+      <div class="inputs-wrapper">
+        <label for="name" class="form-label"> Seu nome* </label>
+        <input
+          type="text"
+          class="form-input"
+          id="name"
+          placeholder="Digite seu nome aqui..."
+          formControlName="name"
+        />
+      </div>
+
+      <div class="inputs-wrapper">
+        <label for="email" class="form-label"> Seu e-mail* </label>
+        <input
+          type="text"
+          class="form-input"
+          id="email"
+          placeholder="Digite seu e-mail aqui..."
+          formControlName="email"
+        />
+      </div>
+
+      <div class="inputs-wrapper">
+        <label for="sexo" class="form-label"> Sexo </label>
+
+        <div
+          style="
+            height: 60px;
+
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+
+            justify-content: space-between;
+            align-items: center;
+
+            padding-left: 8px;
+            padding-right: 8px;
+
+            border-top: 2px #d3b8fa solid;
+            border-bottom: 2px #d3b8fa solid;
+          "
+        >
+          <div class="form-input-radio-wrapper">
+            <input
+              type="radio"
+              class="form-input-radio"
+              id="femin"
+              name="sexo"
+              value="feminino"
+              formControlName="sexo"
+            />
+            <label for="sexo" class="form-label"> Feminino </label>
+          </div>
+
+          <div class="form-input-radio-wrapper">
+            <input
+              type="radio"
+              class="form-input-radio"
+              id="masc"
+              name="sexo"
+              value="masculino"
+              formControlName="sexo"
+            />
+            <label for="sexo" class="form-label"> Masculino </label>
+          </div>
+
+          <div class="form-input-radio-wrapper">
+            <input
+              type="radio"
+              class="form-input-radio"
+              id="outro"
+              name="sexo"
+              value="outro"
+              formControlName="sexo"
+            />
+            <label for="sexo" class="form-label"> Outro </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="inputs-wrapper">
+        <label for="message" class="form-label"> Mensagem </label>
+        <textarea
+          type="text"
+          class="form-textarea"
+          id="message"
+          placeholder="Digite seu mensagem aqui..."
+          formControlName="message"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="!validButtonContact"
+        class="button-contact"
+      >
+        Iniciar jornada!
+      </button>
+    </form>
+  </div>
+
+  <div>
+    <img
+      src="images/contact-image.svg"
+      alt="Contado Image"
+      class="image-contact"
+    />
+  </div>
+</section>
